@@ -29,3 +29,5 @@ else if (number == 0) {
  
 // if number is less than 0 
 else {
+ console.log("The number is negative"); 
+} 
