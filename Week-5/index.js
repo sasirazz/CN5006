@@ -111,7 +111,8 @@ const {
     countDocuments,
     findFemalesOver30,
     deleteManyPersons,
-    updateManyPersons
+    updateManyPersons,
+    insertMany
 } = require('./Week4lab');
 
 const MONGO_URI = 'mongodb+srv://sasirazz7_db_user:Knife123@cluster0.5fur1wx.mongodb.net/Employee';
@@ -166,6 +167,13 @@ app.get('/persons', async (req, res) => {
 });
 
 
+// insert multiple employee rcords
+app.get('/insertMany', async (req, res) => {
+ insertMany()
+ res.send('added')
+// Reteriving femal employee ovear 30
+  
+});
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
