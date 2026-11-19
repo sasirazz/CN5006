@@ -2,7 +2,7 @@ const DiscountCaluculator = ({ productName, price }) => {
 const calculateDiscount = () => { 
 const DisRate = document.getElementById("DisRate").value; 
 const priceAfterDiscount = 
-Number(price) - (Number(price) * Number(DisRate)); 
+Number(price) - (Number(price) / Number(DisRate)); 
 document.getElementById("DisMessage").innerHTML = 
 `<b style="color:green">Price After Discount: £${priceAfterDiscount}</b>`; 
 }; 
